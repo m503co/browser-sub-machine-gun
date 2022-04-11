@@ -199,7 +199,7 @@ class FYRW {
     CONCURRENCY_LIMIT = targets.length * 2;     // Any more than this and the rate of IP banning skyrockets.
     // This array holds all the Promises returned by fetch() operations.
     queue = [];
-    attacking = true; // Should change to false later and add "USE A VPN" warning to top of page. (TODO)
+    attacking = false; // Should change to false later and add "USE A VPN" warning to top of page. (TODO)
 
     constructor() {
         this.statTable = new StatusTable("status-parent-div");
